@@ -25,10 +25,13 @@ Dry electrode are ideal for applications where convenience and ease of use are p
 
 It this project we use wet electrode as we are prioritized over the absolute highest signal quality.
 
-![2.png](https://hackmd.io/_uploads/HynoDIWXp.png)
+![2](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/44b9faf3-59e3-4399-8701-4d03a4bd2c04)
+
+
 ###### Wet Electrodes
 
-![3.png](https://hackmd.io/_uploads/SkKBKLW7T.png)
+![3](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/feb25b9f-e87f-4bf9-8566-ebe8dc1888f3)
+
 ###### Dry Electrodes
 
 #### NOTE: 
@@ -51,11 +54,13 @@ In our EMG signal acquisition setup, we combine one amplification PCB with the E
 
 
  - #### FRONT SIDE OF AMPLIFYING CIRCUIT
-![5.png](https://hackmd.io/_uploads/B1Oc4Kbma.png)
+![5](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/2186c5e6-d295-4333-a77e-c659dad35cb1)
+
 
 
 - ##### ROUTING
-![4.png](https://hackmd.io/_uploads/r1xnVKW7a.png)
+
+![4](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/88ecfbe2-2a02-4468-ad28-2e30dff4b4f8)
 
 
 - #### The "REF," "IN-," and "IN+" connectors located on the left side of the PCB should be appropriately connected to their respective reference, detection, and muscle electrodes. This ensures that each electrode is correctly linked to the corresponding input for precise signal acquisition and processing.
@@ -74,13 +79,15 @@ In our EMG signal acquisition setup, we combine one amplification PCB with the E
  
 
 - ##### FRONT SIDE 
-![PCB 1.png](https://hackmd.io/_uploads/BkSBeubXp.png)
+![PCB 1](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/26e5fba6-d7e3-44ff-9b3c-2e9110fdee33)
 
-- ##### BACK SIDE
-![PCB 22.png](https://hackmd.io/_uploads/BJbwLKZQT.png)
+## BACK SIDE
+![PCB 22](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/04b432e2-e95c-437d-92a4-0cb485a335ed)
+
 
 - #### ROUTING
-![PCB 33.png](https://hackmd.io/_uploads/r1C_IYZQ6.png)
+
+![PCB 33](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/ebf1d0f3-5d1e-48b7-a1d7-5faeb9fc207a)
 
 
 3. AMPLIFYING SIGNAL TO ADC CHANNELS OF ESP-32:
@@ -91,7 +98,8 @@ These channels are supported:
 - ##### 8 channels: GPIO32 - GPIO39
 - ##### 10 channels: GPIO0, GPIO2, GPIO4, GPIO12 - GPIO15, GOIO25 - GPIO27.
 
-![ESP-32 PINOUT.png](https://hackmd.io/_uploads/B1Z4Jcb7T.png)
+![ESP-32 PINOUT](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/8f3719dd-6361-40a8-94c0-21fc51ed62ef)
+
 
 - #### ADC Attenuation
 
