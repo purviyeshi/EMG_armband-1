@@ -1,8 +1,8 @@
 # TABLE OF CONTENT:
 1. TRANSMITTER SETUP
-    * [EMG signal acquisition](#EMG-signal-acquisition)
-    * [Amplifying circuit](#Amplifying-circuit)
-    * [Bandpass filter](#Bandpass-filter)
+    * [EMG signal acquisition](EMG-signal-acquisition)
+    * [Amplifying circuit](Amplifying-circuit)
+    * [Bandpass filter](Bandpass-filter)
     * [EMG signals to ADC channels of ESP-32](EMG-signals-to-ADC-channels-of-ESP-32)
    *   [Errors and It's Solutions.](ERRORS-and-It's-Solutions)
 2. RECEIVER  SETUP
@@ -31,7 +31,8 @@ They are more user-friendly and convenient for quick and easy application . Dry 
 **Dry electrode are ideal for applications where convenience and ease of use are prioritized over the absolute highest signal quality.
 It this project we use wet electrode as we are prioritized over the absolute highest signal quality.**
  
- ![233.png](https://hackmd.io/_uploads/BJPztbzmp.png)
+ ![233](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/4f347012-8bbc-493d-8b23-a280a1d69cf5)
+
 
 - ### Amplifying circuit.
 
@@ -40,7 +41,8 @@ EMG signals are weak, low-amplitude electrical signals produced by muscle contra
 EMG signal acquisition system, we utilize five electrodes, with each amplifying module being dedicated to one specific electrode. Therefore, we require a total of five amplifying modules, each serving as an interface for an individual electrode. This setup allows us to amplify and process the signals from all five electrodes independently and enhances the accuracy and specificity of our EMG data collection.
 
 ###### Instrumental Amplifier
-![INSTU  AMPL.png](https://hackmd.io/_uploads/Hy4pj-fmT.png)
+![INSTU  AMPL](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/628677fb-256e-48c7-add5-0407b27e1081)
+
 In-Amps, are essential because they offer high-precision amplification of weak signals while effectively rejecting common-mode noise. They provide accuracy, customization of gain, and low noise levels, making them ideal for applications where signal fidelity is critical, such as medical instruments and data acquisition systems. Additionally, their high input impedance minimizes source loading, and they can be tailored to specific requirements, ensuring signal quality and accuracy in a wide range of applications.
    
 ###### amplifying circuit
@@ -53,9 +55,10 @@ for an Amplifying circuits check out this links below:
 
 A bandpass filter for EMG signal acquisition is an electronic circuit designed to isolate and emphasize a specific frequency range within the EMG signal. It helps reduce noise, isolate muscle activity-related frequencies, and improve the quality and specificity of the acquired EMG data. By tailoring the lower and upper cutoff frequencies, the bandpass filter can be customized to match the frequency characteristics of the EMG signal, making it a crucial component in medical, research, and clinical applications for accurate and meaningful analysis of muscle activity.
 ##### 4th order bandpass filter
-![342.png](https://hackmd.io/_uploads/ByWygffmT.png)
+![342](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/091cea03-248b-4bb8-b407-fafddba9b6de)
 
-![236.png](https://hackmd.io/_uploads/rJ7flMM76.png)
+
+![235](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/00ee053e-c1bb-4873-9779-60e22ef640a6)
 
 
 
@@ -67,7 +70,8 @@ These channels are supported:
 - ##### 8 channels: GPIO32 - GPIO39
 - ##### 10 channels: GPIO0, GPIO2, GPIO4, GPIO12 - GPIO15, GOIO25 - GPIO27.
 
-![ESP-32 PINOUT.png](https://hackmd.io/_uploads/B1Z4Jcb7T.png)
+![aaj11](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/b8764f82-aeae-4df4-95bf-fa711ba12b2e)
+
 
 - #### ADC Attenuation
 
@@ -128,15 +132,19 @@ Call esp now send() to send ESP-NOW data and esp now register send cb() to regis
 - #### BOARD IMAGES
 
 - ##### Amplifying circuit(front side)
-![5.png](https://hackmd.io/_uploads/HJAZg4GmT.png)
+![5](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/0197d590-3286-4fe5-84fa-ea3599c68015)
+
 
 - ##### amplifying circuit and esp-32 intregrted module:
 
 - ##### front side
-![PCB 1.png](https://hackmd.io/_uploads/BJ2Ie4fma.png)
+![PCB 1](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/f266df9c-00aa-4537-88e3-fa2ccc35f153)
+
 - ##### back side
- 
-![PCB 22.png](https://hackmd.io/_uploads/HyMOeVzma.png)
+ ![PCB 22](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/39dc0846-2d10-45b5-bd3b-6e918e5a8419)
+
+
 - ##### routing
 
-![PCB 33.png](https://hackmd.io/_uploads/HJjYe4fX6.png)
+![PCB 33](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/547042e3-ee44-4962-a636-7bad6727cc81)
+
