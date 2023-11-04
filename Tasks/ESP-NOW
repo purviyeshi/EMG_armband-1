@@ -1,1 +1,37 @@
+TASK 2 
+Now to establish connection between ESPs, you'll be starting with ESP-NOW protocol 
+API Ref: https://docs.espressif.com/projects/esp-idf/en/v4.4.3/esp32/api-reference/network/index.html
+
+i)  Establishing a connection between two ESPs 
+ii) Exchanging the data between the two ESPs: WE'll be exchanging the LSA values WE recorded in task 1
+ we are establishing a connection between two ESP devices using the ESP-NOW protocol and exchanging data between them. Here's an explanation of the task:
+
+Transmitter Side (ESP1):
+
+The transmitter side code initializes the ESP-NOW protocol. It configures the ESP-NOW callback function OnDataSent to handle the status of sent messages.
+
+It sets up WiFi and ESP-NOW on this ESP device.
+
+The LSA (Line Sensor Array) values are read from the ADC channels, and the data is formatted as a string.
+
+The formatted LSA data is sent to the receiver ESP using esp_now_send.
+
+Receiver Side (ESP2):
+
+The receiver side code also initializes the ESP-NOW protocol. It registers a callback function ondatareceived to handle received data.
+
+It sets up WiFi and ESP-NOW on this ESP device.
+
+It adds the transmitter ESP as a peer by specifying its MAC address and channel. This allows the receiver to receive data from the transmitter.
+
+The receiver waits for incoming data in the ondatareceived callback, which logs the received data.
+
+Task 2 Explanation:
+
+Task 2 involves the establishment of a communication link between two ESP devices. ESP1, acting as the transmitter, reads LSA data and sends it to ESP2,acting as the receiver.
+The transmitter prepares the LSA data, sends it using ESP-NOW, and the receiver receives and logs the data.
+This setup allows you to wirelessly exchange data between the ESP devices, making it possible to share LSA values or other information in real-time or as needed.
+
+
+
 
