@@ -1,0 +1,35 @@
+why we need an amplifing circuit ?
+EMG signals are weak, low-amplitude electrical signals produced by muscle contractions.
+Amplification increases signal strength, reduces noise, enhances sensitivity, and allows for precise data analysis.
+This is critical for applications like monitoring muscle activity, and ensuring high-quality, reliable EMG data.
+NOTE:
+In the EMG signal acquisition system, we utilize five electrodes, with each amplifying module being dedicated to one specific electrode.
+Therefore, we require a total of five amplifying modules, each serving as an interface for an individual electrode.
+This setup allows us to amplify and process the signals from all five electrodes independently and enhances the accuracy and specificity of our EMG data collection.
+
+In our EMG signal acquisition setup, we combine one amplification PCB with the ESP-32 microcontroller within a single module.
+Consequently, we have a total of five separate modules, with one of them featuring the integrated amplification circuit alongside the ESP-32.
+The remaining four modules are dedicated to individual electrodes, allowing for efficient signal processing.
+
+For amplifying circuit designing:
+Refer this link  https://www.pololu.com/file/0J745/Muscle_Sensor_v3_users_manual.pdf
+
+AFTER AMPLFYING THE REQUIRED EMG SIGNALS WE HAVE MINIMIZE THE NOISE SIGNALS FOR THAT:
+APPLY THE BANDPASS FILTER OF 4TH ORDER:
+Refer  this link given below:-
+https://github.com/upsidedownlabs/BioAmp-EXG-Pill/blob/main/software/EMGFilter/EMGFilter.ino
+
+Bandpass filter
+A bandpass filter for EMG signal acquisition is an electronic circuit designed to isolate and emphasize a specific frequency range within the EMG signal.
+It helps reduce noise, isolate muscle activity-related frequencies, and improve the quality and specificity of the acquired EMG data.
+By tailoring the lower and upper cutoff frequencies, the bandpass filter can be customized to match the frequency characteristics of the EMG signal,
+making it a crucial component in medical, research, and clinical applications for accurate and meaningful analysis of muscle activity.
+
+
+
+
+
+
+
+
+
