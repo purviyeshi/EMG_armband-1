@@ -148,3 +148,21 @@ Call esp now send() to send ESP-NOW data and esp now register send cb() to regis
 
 ![PCB 33](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/547042e3-ee44-4962-a636-7bad6727cc81)
 
+## ML MODEL
+In this project, a machine learning model is implemented to predict real-time data, specifically discerning between two hand movements: one for a clenched fist and the other for a relaxed hand. The ML model is designed to classify the ongoing hand movements into these two distinct classes.
+
+For improved accuracy, the model is trained on a dataset that captures diverse instances of both fist-clenching and hand relaxation
+
+![Screenshot 2023-11-05 021133](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/28efadf5-43e4-412e-94c2-ee3039bdef7e)
+
+
+![Screenshot 2023-11-05 021205](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/877c4f30-2a79-4a4e-8c74-318a6020de2b)
+
+
+![Screenshot 2023-11-05 021233](https://github.com/anuj-akotkar/EMG_armband/assets/142881764/868438e4-9a9d-4396-be0b-6315f4a8e0b6)
+
+
+
+
+
+
