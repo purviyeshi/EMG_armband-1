@@ -1,0 +1,23 @@
+
+Task 1:
+
+# Write a code to get the line sensor readings (Wall-E LSA) without using "sraboard.h" header file.
+
+Here's an explanation of the task:
+
+1. You configure the ADC (Analog-to-Digital Converter) settings. You set the ADC width to 12 bits, which means the ADC will provide values from 0 to 4095.
+
+2. You configure the attenuation for each of the five ADC channels. The attenuation setting `ADC_ATTEN_DB_11` reduces the input voltage range to 0-3.9V, suitable for most applications.
+
+3. You initialize an array `adc1_readings` to store the ADC readings for each sensor. There are five sensors, so the array has a size of 5.
+
+4. You define an array `sensor_channels` to specify the ADC channels to be read.
+
+5. Inside the `while` loop, you read the raw ADC values for each sensor using a for loop. The `adc1_get_raw` function reads the value from the specified channel and stores it in the `adc1_readings` array.
+
+6. You log the raw ADC readings using the ESP_LOGI function. It displays the values for all five sensors.
+
+7. You introduce a small delay using `vTaskDelay` to control the frequency at which sensor readings are taken.
+
+This code repeatedly reads the raw sensor values from the LSA and displays them, allowing you to monitor the sensor data from Wall-E's Line Sensor Array.
+To refer the code go to EMG_armband/Firmware/1_emgtask.
